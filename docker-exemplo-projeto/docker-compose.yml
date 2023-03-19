@@ -1,0 +1,26 @@
+version: '3.5'
+
+services:
+    api-exemplo:
+        container_name: api-exemplo
+        hostname: api-exemplo.localhost
+        restart: always
+        build:
+            context: ./docker/build/php-fpm
+            dockerfile: Dockerfile
+        working_dir: /var/www/html/api-exemplo
+        expose:
+            - "9000"
+        environment:
+            - COMPOSER_MEMORY_LIMIT=-1
+           #- PHP_IDE_CONFIG:serverName=Xdebug
+        volumes:
+            - ./:/var/www/html/api-exemplo
+            - ./docker/build/config/custom.ini:/usr/local/etc/php/conf.d/custom.ini
+        networks:
+            - MyNetwork
+
+networks:
+    MyNetwork:
+        driver: bridge
+        name: MyNetwork

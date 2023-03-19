@@ -1,0 +1,37 @@
+# For remote debugging through Docker.
+xdebug.remote_port=9000
+xdebug.remote_enable=1
+xdebug.remote_connect_back=1
+
+# If this setting is 1, Xdebug will color var_dumps and stack traces
+# output when in CLI mode and when the output is a tty.
+xdebug.cli_color=1
+# Whether Xdebug should add variable assignments to function traces.
+xdebug.collect_assignments=1
+# Whether Xdebug should collect the parameters passed to functions when a
+# function call is recorded in either the function trace or the stack trace.
+xdebug.collect_params=1
+# Whether Xdebug should write the return value of function calls to the trace files.
+xdebug.collect_return=1
+# By default Xdebug overloads var_dump with its own improved version for
+# displaying variables. You can also use 2 as value for this setting.
+# Besides formatting the var_dump output nicely, it will also add
+# filename and line number to the output.
+xdebug.overload_var_dump=2
+# If this setting is 1, then Xdebug will disable the @ - shut-up - operator
+# so that notices, warnings and errors are no longer hidden.
+xdebug.scream=1
+# Controls the amount of array children and object's properties
+# are shown when variables are displayed.
+xdebug.var_display_max_children=-1
+# Controls the maximum string length that is shown when variables are displayed.
+xdebug.var_display_max_data=-1
+# Controls how many nested levels of array elements and object properties
+# are when variables are displayed
+xdebug.var_display_max_depth=5
+
+#New configs to run Xdebug between container and host machine IDE
+xdebug.remote_autostart=1
+xdebug.remote_handler=dbgp
+xdebug.remote_host=172.17.0.1
+dxdebug.remote_mode=req

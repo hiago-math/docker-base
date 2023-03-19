@@ -1,0 +1,62 @@
+version: '3.9'
+
+services:
+    nginx:
+        container_name: nginx
+        restart: always
+        working_dir: /var/www/html
+        env_file:
+            - .env
+        build:
+            context: ./docker/build/nginx
+            dockerfile: Dockerfile
+        environment:
+            - NGINX_PORT=80
+        volumes:
+            - ${NGINX_HOST_LOG_PATH}:/var/log/nginx
+            - ${NGINX_SITES_PATH}:/etc/nginx/conf.d
+            - ${APPLICATION}:/var/www/html
+        ports:
+            - "${NGINX_HOST_HTTP_PORT}:80"
+        links:
+            - redis
+        networks:
+            - MyNetwork
+
+    mysql:
+        container_name: mysql
+        restart: always
+        env_file:
+          - .env
+        build:
+            context: ./docker/build/mysql
+            dockerfile: Dockerfile
+        ports:
+            - ${MYSQL_PORT}:${MYSQL_PORT}
+        volumes:
+            - ./database/initialization/structure.sql:/docker-entrypoint-initdb.d/structure.sql
+        environment:
+            - MYSQL_DATABASE=${MYSQL_DATABASE}
+            - MYSQL_USER=${MYSQL_USER}
+            - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+        networks:
+            - MyNetwork
+
+    redis:
+        container_name: redis
+        env_file:
+            .env
+        image: redis
+        ports:
+          - "${REDIS_PORT}:${REDIS_PORT}"
+        networks:
+            - MyNetwork
+volumes:
+    database:
+    esdata:
+
+networks:
+    MyNetwork:
+        driver: bridge
+        name: MyNetwork

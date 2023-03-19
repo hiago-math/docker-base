@@ -1,0 +1,61 @@
+2023/03/19 16:16:10 [emerg] 25#25: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:10 [emerg] 41#41: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:11 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:12 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:12 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:13 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:14 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:16 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:20 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:26 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:29 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:30 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:31 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:31 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:33 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:34 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:38 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:45 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:57 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:57 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:58 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:16:59 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:00 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:02 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:05 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:16 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:17 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:17 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:18 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:19 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:21 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:25 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:31 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:42 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:43 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:44 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:44 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:45 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:47 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:51 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:17:58 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:18:11 [emerg] 1#1: directive "listen" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:18:26 [emerg] 1#1: directive "error_log" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:18:27 [emerg] 1#1: directive "error_log" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:18:28 [emerg] 1#1: directive "error_log" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:18:28 [emerg] 1#1: directive "error_log" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:18:30 [emerg] 1#1: directive "error_log" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:18:31 [emerg] 1#1: directive "error_log" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:18:35 [emerg] 1#1: directive "error_log" is not terminated by ";" in /etc/nginx/conf.d/api-gerenciamento.conf:16
+2023/03/19 16:49:12 [emerg] 11#11: host not found in upstream "app-" in /etc/nginx/conf.d/app-ponto.conf:18
+2023/03/19 16:49:13 [emerg] 28#28: host not found in upstream "app-" in /etc/nginx/conf.d/app-ponto.conf:18
+2023/03/19 16:49:13 [emerg] 1#1: host not found in upstream "app-" in /etc/nginx/conf.d/app-ponto.conf:18
+2023/03/19 16:49:14 [emerg] 1#1: host not found in upstream "app-" in /etc/nginx/conf.d/app-ponto.conf:18
+2023/03/19 16:49:15 [emerg] 1#1: host not found in upstream "app-" in /etc/nginx/conf.d/app-ponto.conf:18
+2023/03/19 16:49:15 [emerg] 1#1: host not found in upstream "app-" in /etc/nginx/conf.d/app-ponto.conf:18
+2023/03/19 16:49:17 [emerg] 1#1: host not found in upstream "app-" in /etc/nginx/conf.d/app-ponto.conf:18
+2023/03/19 16:49:18 [emerg] 1#1: host not found in upstream "app-" in /etc/nginx/conf.d/app-ponto.conf:18
+2023/03/19 16:49:22 [emerg] 1#1: host not found in upstream "app-" in /etc/nginx/conf.d/app-ponto.conf:18
+2023/03/19 16:49:29 [emerg] 1#1: host not found in upstream "app-" in /etc/nginx/conf.d/app-ponto.conf:18
+2023/03/19 16:49:42 [emerg] 1#1: host not found in upstream "app-" in /etc/nginx/conf.d/app-ponto.conf:18
+2023/03/19 16:50:08 [emerg] 1#1: host not found in upstream "app-" in /etc/nginx/conf.d/app-ponto.conf:18
