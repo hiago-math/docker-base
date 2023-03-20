@@ -1,0 +1,81 @@
+version: '3.5'
+
+services:
+    nginx_gym:
+        container_name: gym_nginx
+        env_file:
+            - .env
+        build:
+            context: ./docker/build/nginx
+            dockerfile: Dockerfile
+        volumes:
+            - ${APPLICATION}:/var/www/html
+            - ${NGINX_HOST_LOG_PATH}:/var/log/nginx
+            - ${NGINX_SITES_PATH}:/etc/nginx/conf.d
+        ports:
+            - "${NGINX_HOST_HTTP_PORT}:80"
+            - "${NGINX_HOST_HTTPS_PORT}:443"
+        links:
+            - app
+            - redis
+        networks:
+            - GymNetwork
+
+    app:
+        container_name: gym_app
+        hostname: api-gym.localhost
+        links:
+            - mysql
+        build:
+            context: ./docker/build/php-fpm
+            dockerfile: Dockerfile
+        expose:
+            - "9000"
+        volumes:
+            - ${APPLICATION}:/var/www/html
+        environment:
+            - COMPOSER_MEMORY_LIMIT=-1
+            #- PHP_IDE_CONFIG:serverName=Xdebug
+        depends_on:
+            -   mysql
+        networks:
+            - GymNetwork
+
+    mysql:
+        container_name: gym_mysql
+        command: --init-file /docker-entrypoint-initdb.d/structure.sql
+        env_file:
+          - .env
+        build:
+            context: ./docker/build/mysql
+            dockerfile: Dockerfile
+        ports:
+            - "${MYSQL_PORT}:${MYSQL_PORT}"
+        volumes:
+            - database:/var/lib/mysql
+            - ./database/initialization/structure.sql:/docker-entrypoint-initdb.d/structure.sql
+        environment:
+            - MYSQL_DATABASE=${MYSQL_DATABASE}
+            - MYSQL_USER=${MYSQL_USER}
+            - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+        networks:
+            - GymNetwork
+    redis:
+        container_name: gym_redis
+        env_file:
+          - .env
+        hostname: api-gym.redis
+        image: redis
+        ports:
+          - "${REDIS_PORT}:${REDIS_PORT}"
+        networks:
+            - GymNetwork
+volumes:
+    database:
+    esdata:
+
+networks:
+    GymNetwork:
+        driver: bridge
+        name: GymNetwork

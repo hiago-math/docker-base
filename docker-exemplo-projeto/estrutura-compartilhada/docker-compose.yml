@@ -5,9 +5,7 @@ services:
         container_name: api-exemplo
         hostname: api-exemplo.localhost
         restart: always
-        build:
-            context: ./docker/build/php-fpm
-            dockerfile: Dockerfile
+        image: "hiagosama/php-nginx:latest"
         working_dir: /var/www/html/api-exemplo
         expose:
             - "9000"
