@@ -1,0 +1,9 @@
+# xdebug config within docker container
+xdebug.remote_enable=1
+xdebug.remote_autostart=1
+xdebug.remote_connect_back=off
+xdebug.remote_host=host.docker.internal
+# xdebug.remote_host=10.254.254.254 ## use this to configure it manually
+xdebug.remote_port=9005
+xdebug.idekey=PHPSTORM
+xdebug.max_nesting_level=1500
