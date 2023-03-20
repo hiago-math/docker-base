@@ -50,17 +50,18 @@ Na raiz desse projeto, cria uma pasta chamada "applications" e clone seu projeto
 ```
 docker-exemplo-projeto > estrutura-compartilhada.
 
-Copie a pasta "docker" e o arquivo docker-compose.yml e cole na raiz do seu projeto.
-```
-#### Após copiar. Agora na raiz do seu projeto navegue: Ex.: 
-
-```
-api-fatura > nome da pasta do projeto
-       |__ app
-       |__ bootstrap
+Copie a pasta "docker" e o arquivo docker-compose.yml e cole na raiz do seu projeto que voce clonou na pasta "applications".
+Ex.: applications
+      |_ api-fatura -> exemplo do seu projeto
+         | |__ app
+         | |__ bootstrap
+         | |_ docker
+         |
+         | docker-compose.yml 
        
 *estrtura de pasta do projeto - laravel
 ```
+#### Após copiar. Agora na raiz do seu projeto navegue:
 ```
 docker > build > nginx 
 
