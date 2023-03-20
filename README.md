@@ -135,7 +135,7 @@ Executando comandos sem entrar no container
 ``` 
 ### Acesso do exemplo
 ```
-https://api-fatura.localhost>
+https://api-fatura.localhost
 ```
 
 # Descer ambiente 
