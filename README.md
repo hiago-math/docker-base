@@ -12,13 +12,11 @@ docker-compose
 ```
 
 ## Instalação docker & docker-compose:
-``` 
  [LINUX](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-pt)
  
  [WINDONS](https://docs.docker.com/desktop/install/windows-install/)
  
  [MAC](https://docs.docker.com/desktop/install/mac-install/)
-```
 
 ##Após clonar
 
