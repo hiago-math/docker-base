@@ -18,7 +18,7 @@ docker-compose
  
  [MAC](https://docs.docker.com/desktop/install/mac-install/)
 
-##Após clonar
+## Após clonar
 
 Rode os comandos a seguir na pasta do projeto:
 ```
