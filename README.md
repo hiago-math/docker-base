@@ -1,4 +1,4 @@
-# Docker para configuração de ambiente 
+# Estrutura basica para configuração de ambiente com docker 
 ```
 PHP - 8.1
 MySql - 8.0
