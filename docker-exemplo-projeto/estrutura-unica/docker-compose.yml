@@ -1,7 +1,7 @@
 version: '3.5'
 
 services:
-    nginx_app:
+    nginx:
         container_name: app_nginx
         env_file:
             - .env

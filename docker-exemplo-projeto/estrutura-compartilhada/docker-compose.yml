@@ -2,8 +2,8 @@ version: '3.5'
 
 services:
     api-exemplo:
-        container_name: api-exemplo
-        hostname: api-exemplo.localhost
+        container_name: ms-${APP_NAME}
+        hostname: ${APP_NAME}.localhost
         restart: always
         image: "hiagosama/php-nginx:latest"
         working_dir: /var/www/html/api-exemplo
