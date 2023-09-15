@@ -43,7 +43,6 @@ services:
 
     mysql:
         container_name: app_mysql
-        command: --init-file /docker-entrypoint-initdb.d/structure.sql
         env_file:
           - .env
         build:
@@ -53,7 +52,7 @@ services:
             - "${MYSQL_PORT}:${MYSQL_PORT}"
         volumes:
             - database:/var/lib/mysql
-            - ./database/initialization/structure.sql:/docker-entrypoint-initdb.d/structure.sql
+            - ./database/initialization:/docker-entrypoint-initdb.d
         environment:
             - MYSQL_DATABASE=${MYSQL_DATABASE}
             - MYSQL_USER=${MYSQL_USER}
